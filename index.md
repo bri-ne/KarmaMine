@@ -12,7 +12,7 @@ folium-loader:
 # Karma Mining 
 *Gianluca Mangiapane, Bri Cervantes*
 
-**[TL;DR](#TL;DR)**
+**[TL;DR](#tldr)**
 
 ## Our Motivation
 
