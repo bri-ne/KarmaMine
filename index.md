@@ -20,7 +20,6 @@ Reddit is known as the front page of the internet, but what does it take to get 
 
 As the 15th most used social media network in the world[^1], Reddit boasted more than 430 monthly active users in 2019.[^2] Unlike Facebook or Instagram, Reddit is structured as a forum based platform hosting 2.8 million sub-forums, known as subreddits, where users can discuss anything from [Python](https://www.reddit.com/r/Python/), to  [Wall Street](https://www.reddit.com/r/wallstreetbets/), to things that make them say [‘aww’](https://www.reddit.com/r/aww/). Once subscribed to a subreddit, user’s can post content relating to the subreddit, ask questions, and engage in discussions with other reddit users. In 2019 alone, there were roughly 199 million posts, 1.7 million comments, and 32 billion upvotes made by Reddit users. This is all to say there’s a lot of competition for the front page of Reddit but if you make it there, you’re guaranteed to capture a lot of engagement.
 
-This single-page website demos how to display visualizations created with altair, hvplot, and folium.
 
 ### The Front Page 
 
