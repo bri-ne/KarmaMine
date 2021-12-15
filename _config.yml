@@ -1,8 +1,8 @@
-title: MUSA 550
+title: Our Final Project is Really Just Karma Mining. Sorry. 
 logo: /assets/img/logo.png
-description: Geospatial Data Science in Python.
+description: Final Project for MUSA 550 Geospatial Data Science in Python.
 show_downloads: false
-repository: MUSA-550-Fall-2021/github-pages-single-page-starter
+repository: bri-ne/KarmaMine
 google_analytics:
 remote_theme: pages-themes/minimal
 plugins:
