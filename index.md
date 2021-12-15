@@ -101,6 +101,9 @@ See the [lecture 9B slides](https://musa-550-fall-2021.github.io/slides/lecture-
 ## TL;DR
 Reddit r/all posts, News API, parsing text, clustering and sentiment analysis, are there bad robots using reddit for bad stuff?
 
+Logo paritally credited to Gan Khoon Lay from the Noun Project
+
+
 [^1]: Digital 2021 April Global Statshot Report, [datareportal.com](https://datareportal.com/reports/digital-2021-april-global-statshot)
 [^2]: Reddit Statistics, [oberlo.com](https://www.oberlo.com/blog/reddit-statistics)
 [^3]: This is not the official name for the algorithm, but is what we’ll be calling it
