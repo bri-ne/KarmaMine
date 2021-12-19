@@ -27,12 +27,14 @@
   <body>
     <div class="wrapper">
       <header>
-        <h2> 
+         
           {% for page in site.pages %}
+        <h2>
          <ul><li> <a href={{ page.filename }}>{{ page.title }}</a></li></ul>
+         </h2>
                 {% endfor %}
             
-        </h2>
+        
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
