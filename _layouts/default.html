@@ -27,9 +27,11 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>{% for page in site.pages %}
-             <a href={{ page.filename }}>{{ page.title }}</a>
+        <h1> <ul>
+          {% for page in site.pages %}
+         <lil> <a href={{ page.filename }}>{{ page.title }}</a></li>
                 {% endfor %}
+            </ul>
         </h1>
         
         {% if site.logo %}
