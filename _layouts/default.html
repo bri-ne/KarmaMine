@@ -27,11 +27,11 @@
   <body>
     <div class="wrapper">
       <header>
-         
+        <h1>Table of Contents</h1> 
           {% for page in site.pages %}
-        <h2>
-         <a href={{ page.filename }}>{{ page.title }}</a><br><br>
-         </h2>
+        <h3>
+         <a href={{ page.filename }}>{{ page.title }}</a><br>
+         </h3>
                 {% endfor %}
             
         
