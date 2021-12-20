@@ -22,9 +22,11 @@ Given Reddit's self-defined culture, we wanted to first investigate what users o
 In seeking to find out more about what gets popular, we pulled roughly 2,5000 top posts from r/all sorted by best of all time. We first investigated the general sentiment of these posts using TextBlob, which provided polarity and subjectivity ratings. When we noticed some odd results we experimented with another NLP, Flair. Below are the results showing polarity ratings from Flair and Textblob, as well as sentiment ratings from only Textblob.
 
 ![sentiment, polarity by subreddit from posts on r/all](/KarmaMine/assets/img/subdotplot_newpol.png)
-
+[![sentiment, polarity by subreddit from posts on r/all](/KarmaMine/assets/img/subdotplot_newpol.png)](/KarmaMine/assets/img/subdotplot_newpol.png)
 
 #### 2. How representative is Reddit’s front page of what’s happening in the world? 
+
+[![sentiment, polarity by subreddit from posts on r/all](/KarmaMine/assets/img/subdotplot_newpol.png)](/KarmaMine/assets/img/subdotplot_newpol.png)
 
 While Reddit is a subculture unto itself ([ex.1](https://www.reddit.com/r/Music/comments/56cdgm/ama_im_really_rick_astley_i_swear_and_to/), [ex.2](http://i0.kym-cdn.com/entries/icons/original/000/016/212/manning.png)), it’s not possible for the platform to fully extricate itself from the rest of the IRL world. As a result, its lively subculture not only amplifies reddit-wide values, but it can also act as an accelerant for ideas and narratives that have context outside of Reddit. Further, the loyalty that users have to the site, might mean they use it for more than just fun. In 2016, the Pew Research Center found that 78% of Reddit users get their news from the site.[^5] We’ll investigate the connections that recent r/all posts have with news headlines by identifying if they share common themes. Additionally, we’ll compare sentiment analysis results from posts and news headlines to investigate if general feelings are shared across platforms.
 
