@@ -42,6 +42,9 @@ This visualization was first developed by [Carson Sievert and Kenneth E. Shirley
 
 <div id="LDA-chart-1"></div>
 
+this is the iframe code below
+<iframe src="charts/rall_best_ldamodel.html" frameborder="0" id="mainPageBody" width="1080px" height="1080px"></iframe>
+
 If you find this chart confusing, you're not alone. We believe that the visual representation is very clear, but what exactly the topics are is not. Further we believe that this is a result of the data and the nature of Reddit. As shown in the bar graphs of common subreddit featured on r/all, the top two most common subreddits are r/pics and r/memes. These are two image based subreddits and, from our experience as reddit users, we can assume that the titles associated with image posts may not be all that illuminating of what the context of the post is. Additionally, Reddit is a very weird place, where platform-wide inside jokes abound. While our knowledge of natural language processing is limited, we think it's safe to say that the LDA model we employed could not have been expected to pick up on the nuances of Reddit's jokes. 
 
 
