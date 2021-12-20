@@ -11,7 +11,8 @@ folium-loader:
 
 # A Look at Reddit's Values, IRL Events, and Possible Bad Actors
 *Gianluca Mangiapane, Bri Cervantes*
-<a href="Proposal.md">Read Our Proposal</a>
+
+
 **[TL;DR](#tldr)**
 
 ## Our Motivation
