@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: default
 altair-loader:
   altair-chart-1: "charts/bestnounsALT_newpol.json"
 hv-loader:
@@ -35,7 +35,7 @@ Next, we investigated the general sentiment of these posts and associated them w
 
 It's clear even by the name of some subreddits what the polarity rating might be. For example, r/wholesomememe trends positive under Textblob and Flair polarity rating, while r/wellthatsucks was rated very negative by Flair and only slightly negative by Textblob. Another way to examine general polarity of the posts we captured is to inspect the most frequent noun phrases. The interactive plot below shows a list of the top 100 most common noun phrases maped with their polarity determined by Flair on the left. 
 
-<div id="altair-chart-1" style= "width: 400px;"></div>
+<div id="altair-chart-1" style= "width: 300px;"></div>
 
 Finally, we attempted to identify some common themes in the posts that we pulled from r/all. Using the Gensim library we employed a topic model to extract common themes in the noun phrases extracted from the titles by again using Textblob. With the [help of examples published by Data Science With Raghav](https://github.com/raaga500/YTshared/blob/master/V4_TopicModelling_4.ipynb) we identified roughly 20 clusters of potential themes. Below is an interactive chart that shows on the top 10 words in each topic cluster on the right. On the left is a intertopic distance map, that in very simple terms shows the relative 'distance' between the topics identified. Circles that are closer together represent topics that are more related to each other than circles far apart. Additionally the size of the cirlces represent the number of words associated with each topic. Though we've elected to only show the top 10 words associated with each topic, some topics include over 30 keywords. 
 
@@ -44,7 +44,7 @@ This visualization was first developed by [Carson Sievert and Kenneth E. Shirley
 <div id="LDA-chart-1"></div>
 
 this is the iframe code below
-<iframe src="charts/rall_best_ldamodel.html" frameborder="0" id="mainPageBody" width="1080px" height="1080px"></iframe>
+<iframe src="charts/rall_best_ldamodel.html" frameborder="0" id="mainPageBody" width="500px" height="1080px"></iframe>
 
 If you find this chart confusing, you're not alone. We believe that the visual representation is very clear, but what exactly the topics are is not. Further we believe that this is a result of the data and the nature of Reddit. As shown in the bar graphs of common subreddit featured on r/all, the top two most common subreddits are r/pics and r/memes. These are two image based subreddits and, from our experience as reddit users, we can assume that the titles associated with image posts may not be all that illuminating of what the context of the post is. Additionally, Reddit is a very weird place, where platform-wide inside jokes abound. While our knowledge of natural language processing is limited, we think it's safe to say that the LDA model we employed could not have been expected to pick up on the nuances of Reddit's jokes. 
 
