@@ -41,10 +41,8 @@ Finally, we attempted to identify some common themes in the posts that we pulled
 
 This visualization was first developed by [Carson Sievert and Kenneth E. Shirley.](https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf), and more details about how to interpret it can be [found on alteryx.com](https://community.alteryx.com/t5/Data-Science/Getting-to-the-Point-with-Topic-Modeling-Part-3-Interpreting-the/ba-p/614992).
 
-<div id="LDA-chart-1"></div>
+[![LDA preview](/KarmaMine/assets/img/lda.png)](/KarmaMine/LDA.html)
 
-this is the iframe code below
-<iframe src="charts/rall_best_ldamodel.html" frameborder="0" id="mainPageBody" width="500px" height="1080px"></iframe>
 
 If you find this chart confusing, you're not alone. We believe that the visual representation is very clear, but what exactly the topics are is not. Further we believe that this is a result of the data and the nature of Reddit. As shown in the bar graphs of common subreddit featured on r/all, the top two most common subreddits are r/pics and r/memes. These are two image based subreddits and, from our experience as reddit users, we can assume that the titles associated with image posts may not be all that illuminating of what the context of the post is. Additionally, Reddit is a very weird place, where platform-wide inside jokes abound. While our knowledge of natural language processing is limited, we think it's safe to say that the LDA model we employed could not have been expected to pick up on the nuances of Reddit's jokes. 
 
