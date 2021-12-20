@@ -3,8 +3,8 @@ layout: default
 altair-loader:
   altair-chart-1: "charts/bestnounsALT_newpol.json"
 hv-loader:
-  hv-chart-1: ["charts/Reddit_Subjectivity_vs_Polarity.html", "500"] # second argument is the desired height
-  hv-chart-2: "Polarity_Histogram_News_Reddit"
+  hv-chart-1: ["charts/News_Reddit_Subjectivity_vs_Polarity.html", "500"] # second argument is the desired height
+  hv-chart-2: "charts/Polarity_Histogram_News_Reddit.html"
 folium-loader:
   folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the desired height
   folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
