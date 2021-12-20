@@ -1,5 +1,6 @@
 ---
-layout: home
-author_profile: false
+layout: default
+author_profile: true
 ---
 
+# Welcome!
