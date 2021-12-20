@@ -25,7 +25,7 @@ In seeking to find out more about what gets popular, we pulled roughly 2,5000 to
 
 It's clear even by the name of some subreddits what the polarity rating might be. For example, r/wholesomememe trends positive under Textblob and Flair polarity rating, while r/wellthatsucks was rated very negative by Flair and only slightly negative by Textblob. Another way to examine general polarity of the posts we captured is by most frequent noun phrases. The interactive plot below shows a list of the top 100 most common noun phrases maped with their polarity determined by Flair on the left. 
 
-<div id="altair-chart-1"></div>
+<div id="altair-chart-1" style= "width: 500px;"></div>
 
 
 #### 2. How representative is Reddit’s front page of what’s happening in the world? 
