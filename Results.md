@@ -10,7 +10,7 @@ folium-loader:
 LDA-loader:
   LDA-chart-1: ["charts/rall_best_ldamodel.html", "600"]
 ---
-## big chagne BIG FRICKEN CHAGENES
+
 
 # A Look at Reddit's Values, IRL Events, and Possible Bad Actors
 *Gianluca Mangiapane, Bri Cervantes*
