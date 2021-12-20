@@ -3,7 +3,8 @@ layout: default
 altair-loader:
   altair-chart-1: "charts/bestnounsALT_newpol.json"
 hv-loader:
-  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
+  hv-chart-1: ["charts/Reddit_Subjectivity_vs_Polarity.html", "500"] # second argument is the desired height
+  hv-chart-2: "Polarity_Histogram_News_Reddit"
 folium-loader:
   folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the desired height
   folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
@@ -54,6 +55,15 @@ To continue in our attempt to decode what makes an popular post on Reddit, we so
 
 We're not sure why this was our result. There is of course a possibility that lack of expertise played a role. We think it's also worth considering the interpretation that our results are not a sign that there is no topic overlap in our samples, but rather that the overlap is difficult to identify. This may be true for reason stated above - the fact the most common subreddits to be featured on r/all are image based (r/memes and r/images). Or it may be due to the truncated nature of titles on reddit posts. To be fair, we did not look at the body of posts, but we made that decision based on our knowledge as users that a great deal of posts are image based.
 
+Beyond identifying shared topics between r/all and news headlines, we were also interested in investigated whether news sources and news focused subreddits shared similar sentiments. Because of the nature of news, we were not only interested in polarity but also subjectivty. As a result, we used TextBlob to analyze sentiments in this section. Below is a scatterplot of subjectivity vs polarity of various news focused subreddits as well as our original interest, r/all.
+
+<div id="hv-chart-1"></div>
+
+Looking just at polarity and only how the news subreddits compare to news sources, the plot below shows XXXXX. In this plot we have taken out all 0 values because it was difficult to see the spread of the rest of the rest of the data. Across these news subreddits, zero polarity values account for roughly 53% of the data. Surprisingly, only 46% of the polarity values for news sources are zeros. The distribution of all non-zero values is shown below. 
+
+<div id="hv-chart-2"></div>
+
+
 We’ll investigate the connections that recent r/all posts have with news headlines by identifying if they share common themes. Additionally, we’ll compare sentiment analysis results from posts and news headlines to investigate if general feelings are shared across platforms.
 
 #### 3. How does Reddit impact the real world? AKA why does understanding Reddit matter?
@@ -87,7 +97,7 @@ alt.renderers.enable('notebook')
 
 Lastly, the measles incidence produced using the HvPlot package:
 
-<div id="hv-chart-1"></div>
+
 
 ###### Notes
 
