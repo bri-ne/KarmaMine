@@ -1,5 +1,5 @@
 ---
-layout: wholepage
+layout: full
 altair-loader:
   altair-chart-1: "charts/bestnounsALT_newpol.json"
 hv-loader:
