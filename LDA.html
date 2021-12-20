@@ -1,11 +1,24 @@
 <!doctype html>
 <html>
     <head>
+            <!-- *Other Link* -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script>
+          
         <style>
+            html {
+                font-family: 'Helvetica';
+            }
             body {
                 max-width: 100%;
                 overflow-x: hidden;
-                background-color:white;
+                background-color:whitesmoke;
             }
             h1 {
                 text-align: left;
@@ -13,7 +26,7 @@
                 margin-left: 80px;
                 margin-top:-30px;
                 width: 100%;
-                color: #111;
+                color: #212425;
             }
             h2 {
                 padding: 25px;
@@ -23,7 +36,7 @@
                 font-size: 25px;
             }
             h3 {
-                color: #111;
+                color: #494949;
                 padding: 20px;
                 margin-left:20px;
                 margin-right:20px;
@@ -43,21 +56,19 @@
                 font-size:  20;
                 }
             .column1 {
-                width:600px;
-                height:500px;
+                width:400px;
                 margin-top: 75px;
                 margin-left: 50px;
-                background-color:white;
+                background-color:whitesmoke;
                 z-index: 2;
                 hyphens: none;
             }
 
             .column2 {
                 flex: 100%;
-                height: 500px;
                 margin-top: 50px;
                 margin-left: 0px;
-                margin-right: 10px;
+                margin-right: 0px;
                 z-index: 1;
             }
             .row {
@@ -65,10 +76,10 @@
             }
             div.header{
                 height:100px;
-                background-color: white;
-                margin-top: -50px;
-                margin-left: -50px;
-                margin-right: -50px;
+                background-color: whitesmoke;
+                margin-top: -10px;
+                margin-left: 50px;
+                margin-right: 150px;
             }
             ul {
                 list-style-type: none;
@@ -82,28 +93,42 @@
                 margin-top:10px;
                 float: right;
             }
+            li a {
+                display: block;
+                color: white;
+                background-color: #2c80bb;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+            background-color: #275779;
+            color: white;
+            }
         </style>
     </head>
     <body>
+
         <div class="header">
             <ul>
-              <li style="float:right; margin-top:20px; margin-right:50px; "><a href="/KarmaMine/Report.html">Back to the Report</a></li>
-              <h1 style="float:left; "> LDA Topic Analysis of R/all Posts</h1>
+              <li style="float:right; margin-top:20px; margin-right:50px; "><a href="https://bri-ne.github.io/KarmaMine/Results.html">Back to the Report</a></li>
+              <h1 style="float:left; margin-left:50px;"> LDA Topic Analysis of R/all Posts</h1>
             </ul>
+          </div>
+   
+        <div class="row"  style= "width:80%; margin-right:30px; margin-top:15px; margin-left:100px; color:#858585;">
+
+            <p>
+                Finally, we attempted to identify some common themes in the posts that we pulled from r/all. Using the Gensim library we employed a topic model to extract common themes in the noun phrases extracted from the titles by again using Textblob. With the <a href="https://github.com/raaga500/YTshared/blob/master/V4_TopicModelling_4.ipynb">help of examples published by Data Science With Raghav</a> we identified roughly 20 clusters of potential themes. Below is an interactive chart that shows on the top 10 words in each topic cluster on the right. On the left is a intertopic distance map, that in very simple terms shows the relative 'distance' between the topics identified. Circles that are closer together represent topics that are more related to each other than circles far apart. Additionally the size of the cirlces represent the number of words associated with each topic. Though we've elected to only show the top 10 words associated with each topic, some topics include over 30 keywords. 
+
+                This visualization was first developed by <a href="https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf">Carson Sievert and Kenneth E. Shirley.</a>, and more details about how to interpret it can be <a href="https://community.alteryx.com/t5/Data-Science/Getting-to-the-Point-with-Topic-Modeling-Part-3-Interpreting-the/ba-p/614992">found on alteryx.com</a>
+                If you find this chart confusing, you're not alone. We believe that the visual representation is very clear, but what exactly the topics are is not. Further we believe that this is a result of the data and the nature of Reddit. As shown in the bar graphs of common subreddit featured on r/all, the top two most common subreddits are r/pics and r/memes. These are two image based subreddits and, from our experience as reddit users, we can assume that the titles associated with image posts may not be all that illuminating of what the context of the post is. Additionally, Reddit is a very weird place, where platform-wide inside jokes abound. While our knowledge of natural language processing is limited, we think it's safe to say that the LDA model we employed could not have been expected to pick up on the nuances of Reddit's jokes.  
+            </p>
         </div>
-        <div class="row">
-            <div class="column1">
-                <p>
-                    Finally, we attempted to identify some common themes in the posts that we pulled from r/all. Using the Gensim library we employed a topic model to extract common themes in the noun phrases extracted from the titles by again using Textblob. With the <a href="https://github.com/raaga500/YTshared/blob/master/V4_TopicModelling_4.ipynb">help of examples published by Data Science With Raghav</a> we identified roughly 20 clusters of potential themes. Below is an interactive chart that shows on the top 10 words in each topic cluster on the right. On the left is a intertopic distance map, that in very simple terms shows the relative 'distance' between the topics identified. Circles that are closer together represent topics that are more related to each other than circles far apart. Additionally the size of the cirlces represent the number of words associated with each topic. Though we've elected to only show the top 10 words associated with each topic, some topics include over 30 keywords. 
+        <div class="row" style="width:80%; margin-right:30px; margin-top:5px; margin-left:100px;">
+            <iframe src="charts/rall_best_ldamodel.html" scrolling= "no" frameborder="0"  width="1200px" height="1200px" onload="resizeIframe(this)"></iframe>
+        </div> 
 
-                    This visualization was first developed by <a href="https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf">Carson Sievert and Kenneth E. Shirley.</a>, and more details about how to interpret it can be <a href="https://community.alteryx.com/t5/Data-Science/Getting-to-the-Point-with-Topic-Modeling-Part-3-Interpreting-the/ba-p/614992">found on alteryx.com</a>
-                    If you find this chart confusing, you're not alone. We believe that the visual representation is very clear, but what exactly the topics are is not. Further we believe that this is a result of the data and the nature of Reddit. As shown in the bar graphs of common subreddit featured on r/all, the top two most common subreddits are r/pics and r/memes. These are two image based subreddits and, from our experience as reddit users, we can assume that the titles associated with image posts may not be all that illuminating of what the context of the post is. Additionally, Reddit is a very weird place, where platform-wide inside jokes abound. While our knowledge of natural language processing is limited, we think it's safe to say that the LDA model we employed could not have been expected to pick up on the nuances of Reddit's jokes.  
-                </p>
-            </div>
-            <div class="column2" >
-                <iframe src="charts/rall_best_ldamodel.html" frameborder="0" id="mainPageBody" width="500px" height="1080px"></iframe>
-
-            </div>
         
     </body>
 </html>
