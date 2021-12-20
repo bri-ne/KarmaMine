@@ -21,7 +21,7 @@ Given Reddit's self-defined culture, we wanted to first investigate what users o
 
 In seeking to find out more about what gets popular, we pulled roughly 2,5000 top posts from r/all sorted by best of all time. We first investigated the general sentiment of these posts using TextBlob, which provided polarity and subjectivity ratings. When we noticed some odd results we experimented with another NLP, Flair. Below are the results showing polarity ratings from Flair and Textblob, as well as sentiment ratings from only Textblob.
 
-
+![sentiment, polarity by subreddit from posts on r/all](/KarmaMine/assets/img/subdotplot_newpol.png)
 
 
 #### 2. How representative is Reddit’s front page of what’s happening in the world? 
@@ -35,7 +35,7 @@ It’s clear the IRL world can influence what people talk about on Reddit, but c
 If we identify superusers, are their posts seemingly neutral or do they tend to push a narrative?
 
 
-![sentiment, polarity by subreddit from posts on r/all](/KarmaMine/assets/subdotplot_newpol.png)
+
 
 
 ###### Example: Embedding Altair & Hvplot Charts
