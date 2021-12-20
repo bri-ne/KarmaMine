@@ -7,3 +7,9 @@ google_analytics:
 remote_theme: pages-themes/minimal
 plugins:
   - jekyll-remote-theme
+relative_links:
+  enabled: true
+  collections: true
+include: 
+  - Proposal.md
+  - Results.md
