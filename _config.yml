@@ -13,3 +13,4 @@ relative_links:
 include: 
   - Proposal.md
   - Results.md
+  - LDA.html
