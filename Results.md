@@ -5,6 +5,7 @@ altair-loader:
 hv-loader:
   hv-chart-1: ["charts/News_Reddit_Subjectivity_vs_Polarity.html", "500"] # second argument is the desired height
   hv-chart-2: ["charts/Polarity_Histogram_News_Reddit.html", "500"]
+  hv-chart-3: ["charts/bot_accusation.html", "500"]
 ---
 
 
@@ -78,11 +79,22 @@ The model is set to predict which subreddit comments come from, and we interpret
 
 ![r/SubSimulatorGPT2 and r/all confusion matrixw](/KarmaMine/assets/img/rall_SubSimGPT2Matrix.png)
 
-Then using the model built on r/all and r/SubredditSimiulatorGPT2, we attempted to predict if comments from users accused to be robots were actually robots.
+Then using the model built on r/all and r/SubredditSimiulatorGPT2 we attempted to predict if comments from users accused to be robots were actually robots. We first pulled comments from r/news, cleaned them in the same way we cleaned the training and testing comments, and then filtered for accusations of bots. If a comment included the words "bot" or "robot" (capitalized or not) and did not include the phrase "i am bot", like many moderator bots do, we captured these comments as accusations. In the few times we did this, there weren't very many left to sort through. We went through the remaining manually to confirm if they were actually accusations or if they just happened to be talking about robots in a different context.
+
+**Below are two examples of a comments considered to be accusations:** 
+[![comment that says: OP doesn't care about the facts. He's just a dumb bot.](/KarmaMine/assets/img/roboy.PNG)](/KarmaMine/assets/img/roboy.PNG)
+
+[![comment that says: wow you are dense. They never said the vaccine would be 100% effective what in the world is wrong with you. It is like you didn't even read and understand my last comment to you. Am I talking to a poorly designed bot or a way below average person?](/KarmaMine/assets/img/roboy3.PNG)](/KarmaMine/assets/img/roboy3.PNG)
+
+ For the comments confirmed as accusation, we identified comments that were being accused. We followed the same cleaning steps for the "accused" comments and then fed them into our model. A subjective look at the results suggests that the model is accurate in predicting non-robots, but we ran up against a limitation in predicting robots. If an "accused" comment is clearly a robot it's likely the comment has beeen removed, leaving us with nothing to test on. Therefore, with our model, we can really only trust its predictions for not robot. In fact our model never predicted a comment was from robot on our manual run. The plot belows shows results from a more automated strategy, where we include every comment that mentions the word "bot" or "robot" and only take out comments that say "i am a bot." You can pull in live comment at this link to see what predictions are for recent comments on [r/all, r/news, and r/politics.]()
 
 
+<div id="hv-chart-3"></div>
 
 
+### Conclusion
+
+While not all of our findings were meaningful, we did learn a few things. One, Reddit is a weird place, full of nuanced subcultures that are hard to pin down. The threat of bots, or annoyance of them, felt by other users is widespread as the image of the accusatory comments show. But, in the near future there may be solution to identifying bots in the wild. Our model performed well in training and testing, but it's strength really does come from strong pre-processing - something our app was unable to incorporate. 
 
 
 
